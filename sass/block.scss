@@ -1,0 +1,167 @@
+/**
+ * @file
+ * Basic block styling
+ */
+ 
+@import "init";
+
+#block-islandora-solr-simple{
+  margin-top: -20px;
+  .adv_search, .adv_deposit {
+    float: right;
+    font-size: 85%;
+    text-decoration: none;
+  }
+}
+#block-islandora-solr-simple #edit-submit {
+   -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/search_btn.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: -moz-use-text-color;
+    border-left-style: none;
+    border-left-width: medium;
+    border-right-color: -moz-use-text-color;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-color: -moz-use-text-color;
+    border-top-style: none;
+    border-top-width: medium;
+    color: transparent;
+    float: right;
+    height: 25px;
+    position: relative;
+    right: -110px;
+    top: -28px;
+    width: 25px;
+}
+
+#block-islandora-solr-simple .form-text {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: #ccc;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #ccc;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #ccc;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #ccc;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: 0 3px 3px -3px #808184;
+    color: #808184;
+    float: right;
+    height: 1.9em;
+    padding-left: 0.5em;
+    width: 97%;
+}
+
+#block-menu-menu-footer-lower-menu{
+  margin-bottom: 0px;
+  ul{
+    margin-left: 0px;
+  }
+}
+
+.header__region {
+    clear: right;
+    display: block;
+    float: right;
+    margin-top: -10px;
+    position: relative;
+    right: 0;
+}
+
+.block{
+  h2{
+    font-size: 110%;
+    font-family: "Proxima Nova",Verdana,Arial,Helvetica,sans-serif
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+#block-islandora-solr-sort{
+  h2{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+  }
+}
+.islandora-solr-sort{
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 1em;
+  li{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+.block-islandora-usage-stats item li {
+  padding-top: 5px;
+  span{
+    color: lightgray;
+  }
+}
+
+.block ul.islandora-solr-facet {
+  padding-left: 0em;
+  list-style: none;
+}
+
+.islandora-solr-facet{
+  li{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+    span.count{
+      color: lightgray;
+    }
+  }
+}
+
+.region-sidebar-first{
+  .block{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+}

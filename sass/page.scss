@@ -1,0 +1,376 @@
+/**
+ * @file
+ * Basic page styling
+ *
+ * We provide some sane print styling for Drupal using Zen's layout method.
+ */
+ 
+@import "init";
+
+#main{
+  padding-top: 0px;
+}
+
+.limiter{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: $width-limit;
+}
+
+#content{
+  padding-bottom: 20px;
+}
+
+.not-front #content {
+
+}
+
+.not-front .content-inner-wrapper, .nav-inner-wrapper{
+  padding: 10px;
+}
+
+.not-front .content-inner-wrapper{
+	
+}
+
+.inner-page-wrapper{
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.front .inner-page-wrapper{
+  background-color: transparent;
+}
+
+.header__site-slogan{
+  text-decoration: none;
+}
+
+#header{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.branding-wrapper {
+  display: table;
+  padding-right: 10px;
+}
+
+.islandora-basic-collection{
+  width: auto;
+  padding: 20px;
+}
+
+.islandora-basic-collection-wrapper{
+  background-color: white;
+}
+
+.islandora-object-info-wrapper{
+  padding: 20px;
+}
+
+#branding {
+  color: #fff;
+  .branding-wrapper a{
+    display: table-cell;
+    text-decoration: none;
+    height: 60px;
+    vertical-align: middle;
+  }
+}
+
+.page__title.title {
+  margin-bottom: .2em;
+  margin-top: .2em;
+}
+
+.breadcrumb{
+  a{
+    text-decoration: none;
+  }
+}
+#branding_text_right{
+  display:table-cell;
+  border-left-color: #3f4760;
+  border-left-style: solid;
+  border-left-width: 2px;
+  color: #9faab2;
+  font-family: "Proxima Nova",Verdana,Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.055em;
+  padding-bottom: 0;
+  padding-left: 5px;
+  padding-right: 0;
+  padding-top: 0;
+  text-transform: uppercase;
+  word-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+#branding_text_left{
+  display:table-cell;
+  color: #fff;
+  font-family: "UConn";
+  font-size: 32px;
+  letter-spacing: 3px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 5px;
+  padding-top: 0;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+#block-system-powered-by{
+  display: none;
+}
+
+#logo{
+  display: none;
+}
+
+.icon-search{
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/sites/all/themes/uconn_theme/images/icon-search.png");
+  background-origin: padding-box;
+  background-position: 9px 8px;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  display: block;
+  height: 35px;
+  width: 35px;
+}
+
+.btn-block {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+}
+
+.letters{
+  text-decoration: none;
+  span{
+    padding-right: 2px;
+    padding-top: 5px;
+  }
+}
+
+.islandora-basic-collection-grid.clearfix dl {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.islandora-basic-collection-display-switch {
+  padding-right: 20px;
+  max-height: 25px;
+  width:100%;
+  li{
+    padding-right: 0em;
+    text-indent: -9999px;
+  }
+}
+
+.display-switch-wrapper {
+  width: 100%;
+  .ul-display-switch{
+    float: right;
+  }
+}
+
+a.islandora-view-grid {
+  background: url('../images/display-grid.png') no-repeat;
+  display: inline-block;
+  height: 21px;
+  width: 20px;
+  color: transparent; 
+}
+
+a.islandora-view-list{
+  background: url('../images/display-grid-list.png') no-repeat;
+  display: inline-block;
+  height: 21px;
+  width: 20px;
+  color: transparent; 
+}
+
+.branding-button-wrapper{
+  display: inline-block;
+  float: right;
+  position: relative;
+  text-align: right;
+  top: -48px;
+  span{
+    font-size: 10px;
+    display: inline-block;
+    color: #c1e8f8;
+  }
+  a{
+  height: 35px;
+  width: 35px;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #1c3173;
+  background-image: linear-gradient(#304994, #1c3173);
+  background-position: center top;
+  border-bottom-color: #1e2b51;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: #1e2b51;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #1e2b51;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #1e2b51;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: 1px 1px 0 #3957b0 inset;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: none;
+  transition-timing-function: ease;
+  }
+}
+
+.header__site-name {
+  font-size: 80%;
+  letter-spacing: 0.5pt;
+  text-transform: uppercase;
+}
+.header__site-link:link, .header__site-link:visited{
+  color: #9c9ba9 !important;
+}
+
+#site-name, #site-slogan{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#site-slogan {
+  font-size: 1.2em;
+  font-family: Verdana,Tahoma,"DejaVu Sans",sans-serif;
+}
+
+#name-and-slogan {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#page-title{
+  display: inline-block;
+}
+
+.secondary-display-profiles{
+  display: inline-block;
+  float: right;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  .secondary-display-rss{
+    max-width: 35px;
+  }
+}
+
+#secondary-display-profiles li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ul.islandora-solr-display {
+  float: right;
+  display: inline;
+  width: 100%;
+  li{
+    display: inline;
+    float: right;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-indent: -9999px;
+    width: 21px;
+    a.display-bookmark{
+      background-image: url("../images/display-bookmark.png");
+      display: block;
+      height: 20px;
+      text-indent: -9999px;
+      width: 21px;
+    }
+    a.display-default{
+      background-image: url("../images/display-grid-list.png");
+      display: block;
+      height: 20px;
+      text-indent: -9999px;
+      width: 21px;
+    }
+    a.display-grid{
+      background-image: url("../images/display-grid.png");
+      display: block;
+      height: 20px;
+      text-indent: -9999px;
+      width: 21px;
+    }
+  }
+}
+
+fieldset.islandora-metadata{
+  border: none;
+}
+.islandora-pdf-content-wrapper {
+  display: inline-block;
+  .islandora-pdf-content{
+    width: auto;
+  }
+}
+
+.islandora-metadata .fieldset-title {
+    text-decoration: none;
+}
+
+.islandora-inline-metadata {
+  dt{
+    text-align: left;
+  }
+}
+
+html.js .collapsible .fieldset-legend {
+  background-position: 70px 65%;
+}
+
+.branding-button-wrapper span a {
+  font-size: 110%;
+  padding-left: 3px;
+  text-align: center;
+  span:nth-child(2){
+    padding-right: 0px;
+  }
+}
+
+.branding-button-wrapper span {
+    color: #c1e8f8;
+    display: inline-block;
+    font-size: 80%;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+#main div.limiter {
+    padding: 0px;
+    div#content{
+      padding: 0px;
+    }
+}

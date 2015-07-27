@@ -1,0 +1,265 @@
+/**
+ * @file
+ * Basic footer styling rules
+ */
+/* line 12, ../sass/footer.scss */
+.btn-libraries {
+  text-align: center;
+  cursor: pointer;
+  list-style-type: none !important;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #0368b0 0%, #0e5b8f 100%);
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-bottom-color: -moz-use-text-color;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: -moz-use-text-color;
+  border-left-style: none;
+  border-left-width: medium;
+  border-right-color: -moz-use-text-color;
+  border-right-style: none;
+  border-right-width: medium;
+  border-top-color: -moz-use-text-color;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-style: none;
+  border-top-width: medium;
+  color: white;
+  font-size: 13px;
+  margin-top: 10px;
+  width: 100%;
+}
+/* line 16, ../sass/footer.scss */
+.btn-libraries dl, .btn-libraries menu, .btn-libraries ol, .btn-libraries ul {
+  margin-top: .8em;
+  margin-bottom: .8em;
+}
+/* line 20, ../sass/footer.scss */
+.btn-libraries .menu__item.is-leaf {
+  list-style-type: none !important;
+  list-style-image: none !important;
+}
+/* line 24, ../sass/footer.scss */
+.btn-libraries ul {
+  padding-left: 0px;
+  list-style-type: none !important;
+  list-style-image: none !important;
+}
+/* line 29, ../sass/footer.scss */
+.btn-libraries a {
+  color: white !important;
+  text-decoration: none;
+  list-style-type: none !important;
+  list-style-image: none !important;
+}
+
+/* line 74, ../sass/footer.scss */
+#footer {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-bottom-color: #ccc;
+  border-bottom-style: solid;
+  border-bottom-width: 0;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: #ccc;
+  border-left-style: solid;
+  border-left-width: 0;
+  border-right-color: #ccc;
+  border-right-style: solid;
+  border-right-width: 0;
+  border-top-color: #ccc;
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.5em;
+}
+/* line 100, ../sass/footer.scss */
+#footer .block {
+  margin-bottom: 0em;
+}
+
+/* line 104, ../sass/footer.scss */
+.footer-lower-menu {
+  font-size: 80%;
+}
+/* line 106, ../sass/footer.scss */
+.footer-lower-menu ul {
+  padding-left: 0px;
+}
+/* line 108, ../sass/footer.scss */
+.footer-lower-menu ul li {
+  display: inline;
+}
+/* line 110, ../sass/footer.scss */
+.footer-lower-menu ul li a {
+  text-decoration: none;
+}
+
+/* line 117, ../sass/footer.scss */
+.footer-menu-links ul {
+  padding-left: 0px;
+  text-align: center;
+  font-size: 80%;
+}
+/* line 121, ../sass/footer.scss */
+.footer-menu-links ul li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 125, ../sass/footer.scss */
+.footer-menu-links ul li a {
+  text-decoration: none;
+}
+
+/* line 132, ../sass/footer.scss */
+.footer-university-info img {
+  max-width: 70px;
+}
+/* line 135, ../sass/footer.scss */
+.footer-university-info .view-content .views-row {
+  display: inline-block;
+}
+
+/* line 140, ../sass/footer.scss */
+.view-footer-icon-and-info {
+  font-size: 75%;
+}
+/* line 143, ../sass/footer.scss */
+.view-footer-icon-and-info .view-content .views-row {
+  width: 100%;
+  display: table;
+}
+/* line 146, ../sass/footer.scss */
+.view-footer-icon-and-info .view-content .views-row .views-field.views-field-field-image-block, .view-footer-icon-and-info .view-content .views-row .views-field.views-field-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 154, ../sass/footer.scss */
+.footer-social-media-view img:hover {
+  opacity: 0.7;
+}
+/* line 157, ../sass/footer.scss */
+.footer-social-media-view table {
+  margin-bottom: 0em;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 670px) {
+  /* line 165, ../sass/footer.scss */
+  #footer .limiter {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  #footer .limiter:before, #footer .limiter:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  #footer .limiter:after {
+    clear: both;
+  }
+  /* line 169, ../sass/footer.scss */
+  #footer .limiter .footer-university-info {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 172, ../sass/footer.scss */
+  #footer .limiter .footer-menu-links {
+    float: left;
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 175, ../sass/footer.scss */
+  #footer .limiter .btn-libraries {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 178, ../sass/footer.scss */
+  #footer .limiter .footer-social-media-view {
+    clear: right;
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 182, ../sass/footer.scss */
+  #footer .limiter .footer-lower-menu {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}

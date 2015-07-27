@@ -1,0 +1,165 @@
+/**
+ * @file
+ * Basic front page styling rules
+ */
+/* line 13, ../sass/collection_object.scss */
+.collection-image-wrapper {
+  width: 100%;
+  height: 400px;
+}
+/* line 16, ../sass/collection_object.scss */
+.collection-image-wrapper a {
+  padding-left: 5px;
+}
+
+/* line 21, ../sass/collection_object.scss */
+.recent-object-item-wrapper {
+  display: table;
+}
+/* line 23, ../sass/collection_object.scss */
+.recent-object-item-wrapper a {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+/* line 27, ../sass/collection_object.scss */
+.recent-object-item-wrapper a img {
+  max-width: 50px;
+}
+
+/* line 34, ../sass/collection_object.scss */
+.collection-latest-objects-wrapper h1 {
+  margin-top: 0em;
+}
+
+/* line 39, ../sass/collection_object.scss */
+.islandora-basic-collection {
+  padding-top: 0em;
+}
+
+/* line 42, ../sass/collection_object.scss */
+.islandora-object-info-wrapper {
+  font-size: 70%;
+}
+
+@media (min-width: 670px) {
+  /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .islandora-object-info-wrapper:before, .islandora-object-info-wrapper:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .islandora-object-info-wrapper:after {
+    clear: both;
+  }
+  /* line 50, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper .collection-image-wrapper {
+    float: left;
+    width: 75%;
+    margin-left: 0%;
+    margin-right: -75%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 54, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper .collection-latest-objects-wrapper {
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 58, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper .collection-description-wrapper {
+    clear: right;
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+@media (max-width: 670px) {
+  /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .islandora-object-info-wrapper:before, .islandora-object-info-wrapper:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .islandora-object-info-wrapper:after {
+    clear: both;
+  }
+  /* line 71, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper .collection-image-wrapper {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 75, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper .collection-latest-objects-wrapper {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 80, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper .collection-description-wrapper {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 83, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper .collection-description-wrapper > h1 {
+    margin-top: 0;
+  }
+
+  /* line 87, ../sass/collection_object.scss */
+  .islandora-pdf-content {
+    width: 100% !important;
+  }
+  /* line 89, ../sass/collection_object.scss */
+  .islandora-pdf-content img {
+    width: 100%;
+  }
+}

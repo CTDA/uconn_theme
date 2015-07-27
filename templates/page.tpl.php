@@ -98,7 +98,7 @@
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
-        <?php if ($secondary_display_profiles): ?>
+        <?php if (isset($secondary_display_profiles)): ?>
           <div class="secondary-display-profiles">
             <?php print $secondary_display_profiles; ?>
           </div>

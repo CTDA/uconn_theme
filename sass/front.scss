@@ -11,7 +11,7 @@
   $zen-auto-include-item-base: true;
 
 .slideshow {
-  margin-bottom: 2.5em;
+  margin-bottom: .6em;
   .galleria-container {
     background: transparent;
     max-width: 100%;
@@ -38,6 +38,9 @@
   #main{
     padding-top: 0em;
   }
+  .inner-page-wrapper{
+    padding-top: 0px;
+  }
 }
 .lower-front-block-style{
   border: 1px solid #D6D6D6;
@@ -59,18 +62,21 @@
 }
 
 .front-left{
+  margin-bottom: .6em;
   .block-inner-wrapper{
     @extend .lower-front-block-style;
   }
 }
 
 .front-center{
+  margin-bottom: .6em;
   .block-inner-wrapper{
     @extend .lower-front-block-style;
   }
 }
 
 .front-right{
+  margin-bottom: .6em;
   .block-inner-wrapper{
     @extend .lower-front-block-style;
   }

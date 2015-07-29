@@ -5,15 +5,39 @@
 /* line 8, ../sass/block.scss */
 #block-islandora-solr-simple {
   margin-top: -20px;
+  overflow: hidden;
 }
-/* line 10, ../sass/block.scss */
+/* line 11, ../sass/block.scss */
 #block-islandora-solr-simple .adv_search, #block-islandora-solr-simple .adv_deposit {
   float: right;
   font-size: 85%;
   text-decoration: none;
 }
 
-/* line 16, ../sass/block.scss */
+/* line 19, ../sass/block.scss */
+.block-service-links h2 {
+  float: left;
+  font-size: 80% !important;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+/* line 25, ../sass/block.scss */
+.block-service-links .item-list ul li {
+  display: inline;
+  padding-left: 10px;
+}
+
+/* line 31, ../sass/block.scss */
+.service-links ul li {
+  display: inline-block;
+}
+
+/* line 35, ../sass/block.scss */
+div.service-label {
+  display: none;
+}
+
+/* line 38, ../sass/block.scss */
 #block-islandora-solr-simple #edit-submit {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -53,7 +77,7 @@
   width: 25px;
 }
 
-/* line 55, ../sass/block.scss */
+/* line 77, ../sass/block.scss */
 #block-islandora-solr-simple .form-text {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -88,16 +112,16 @@
   width: 97%;
 }
 
-/* line 89, ../sass/block.scss */
+/* line 111, ../sass/block.scss */
 #block-menu-menu-footer-lower-menu {
   margin-bottom: 0px;
 }
-/* line 91, ../sass/block.scss */
+/* line 113, ../sass/block.scss */
 #block-menu-menu-footer-lower-menu ul {
   margin-left: 0px;
 }
 
-/* line 96, ../sass/block.scss */
+/* line 118, ../sass/block.scss */
 .header__region {
   clear: right;
   display: block;
@@ -107,17 +131,17 @@
   right: 0;
 }
 
-/* line 106, ../sass/block.scss */
+/* line 128, ../sass/block.scss */
 .block h2 {
   font-size: 110%;
   font-family: "Proxima Nova", Verdana, Arial, Helvetica, sans-serif;
 }
-/* line 110, ../sass/block.scss */
+/* line 132, ../sass/block.scss */
 .block a {
   text-decoration: none;
 }
 
-/* line 116, ../sass/block.scss */
+/* line 138, ../sass/block.scss */
 #block-islandora-solr-sort h2 {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -125,13 +149,13 @@
   border-bottom: 1px solid lightgray;
 }
 
-/* line 123, ../sass/block.scss */
+/* line 145, ../sass/block.scss */
 .islandora-solr-sort {
   list-style: none;
   padding-left: 0px;
   margin-top: 1em;
 }
-/* line 127, ../sass/block.scss */
+/* line 149, ../sass/block.scss */
 .islandora-solr-sort li {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -139,34 +163,34 @@
   border-bottom: 1px solid lightgray;
 }
 
-/* line 135, ../sass/block.scss */
+/* line 157, ../sass/block.scss */
 .block-islandora-usage-stats item li {
   padding-top: 5px;
 }
-/* line 137, ../sass/block.scss */
+/* line 159, ../sass/block.scss */
 .block-islandora-usage-stats item li span {
   color: lightgray;
 }
 
-/* line 142, ../sass/block.scss */
+/* line 164, ../sass/block.scss */
 .block ul.islandora-solr-facet {
   padding-left: 0em;
   list-style: none;
 }
 
-/* line 148, ../sass/block.scss */
+/* line 170, ../sass/block.scss */
 .islandora-solr-facet li {
   margin-bottom: 5px;
   margin-top: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid lightgray;
 }
-/* line 153, ../sass/block.scss */
+/* line 175, ../sass/block.scss */
 .islandora-solr-facet li span.count {
   color: lightgray;
 }
 
-/* line 160, ../sass/block.scss */
+/* line 182, ../sass/block.scss */
 .region-sidebar-first .block {
   background-color: white;
   box-sizing: border-box;

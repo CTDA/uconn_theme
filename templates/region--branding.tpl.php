@@ -23,14 +23,12 @@
     <div class="branding-button-wrapper">
       <span>
       <a class="btn btn-primary btn-block" href="http://uconn.edu/search">
-        <span class="icon-search"></span>
+        <img alt="Search Site Icon" src="/<?php print(path_to_theme());?>/images/icon_search.gif">
       </a>
       </span>
       <span>
         <a class="btn btn-primary btn-block letters" href="http://uconn.edu/azindex.php">
-          <span class="letter">A</span>
-          <span class="dash">-</span>
-          <span class="letter">Z</span>
+          <img alt="A to Z Index Icon" src="/<?php print(path_to_theme());?>/images/icon_az.gif">
         </a>
       </span>
     </div>

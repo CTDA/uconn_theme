@@ -21,19 +21,19 @@ function uconn_theme_form_system_theme_settings_alter(&$form, &$form_state, $for
   );
   $form['uconn_theme_custom']['uconn_branding_text'] = array(
     '#type' => 'textfield',
-    '#title' => t('Branding header text.'),
+    '#title' => t('Branding header text'),
     '#default_value' => (theme_get_setting('uconn_branding_text') ? theme_get_setting('uconn_branding_text') : "UCONN"),
     '#description' => t("Text in the header branding area, defaults to UCONN."),
   );
   $form['uconn_theme_custom']['uconn_branding_text_university'] = array(
     '#type' => 'textfield',
-    '#title' => t('Branding university text.'),
+    '#title' => t('Branding university text'),
     '#default_value' => (theme_get_setting('uconn_branding_text_university') ? theme_get_setting('uconn_branding_text_university') : "UNIVERSITY OF CONNECTICUT"),
     '#description' => t("Text in the header branding area, defaults to UNIVERSITY OF CONNECTICUT."),
   );
   $form['uconn_theme_custom']['uconn_branding_text_link'] = array(
     '#type' => 'textfield',
-    '#title' => t('Link the branding text.'),
+    '#title' => t('Link the branding text'),
     '#default_value' => (theme_get_setting('uconn_branding_text_link') ? theme_get_setting('uconn_branding_text_link') : "research.lib.uconn.edu"),
     '#description' => t("Link the branding text to a paticular website, defaults to research.lib.uconn.edu."),
   );
@@ -46,7 +46,7 @@ function uconn_theme_form_system_theme_settings_alter(&$form, &$form_state, $for
   );
   $form['uconn_theme_custom']['collection_level']['collection_image_ds'] = array(
     '#type' => 'textfield',
-    '#title' => t('Collection Level Image.'),
+    '#title' => t('Collection Level Image Datastream'),
     '#default_value' => (theme_get_setting('collection_image_ds') ? theme_get_setting('collection_image_ds') : "TN"),
     '#description' => t("The collection level objects datastream id (DSID) to use as an image on the collection landing page."),
   );

@@ -7,11 +7,33 @@
 
 #block-islandora-solr-simple{
   margin-top: -20px;
+  overflow: hidden;
   .adv_search, .adv_deposit {
     float: right;
     font-size: 85%;
     text-decoration: none;
   }
+}
+
+.block-service-links{
+  h2{
+    float: left;
+    font-size: 80% !important;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+  .item-list ul li{
+    display: inline;
+    padding-left: 10px;
+  }
+}
+
+.service-links ul li {
+    display: inline-block;
+}
+
+div.service-label{
+  display: none;
 }
 #block-islandora-solr-simple #edit-submit {
    -moz-border-bottom-colors: none;

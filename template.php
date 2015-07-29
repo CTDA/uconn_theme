@@ -35,7 +35,7 @@ function uconn_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 15;
   $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'] = t("Search Repository");
   $deposit = array(
-    '#markup' => l(t("Deposit"), "", array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
+    '#markup' => l(t("Deposit"), "http://research.lib.uconn.edu/submit", array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
   );
   $link = array(
     '#markup' => l(t("Advanced Search"), "advanced-search", array('attributes' => array('class' => array('adv_search')))),

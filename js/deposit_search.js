@@ -16,8 +16,8 @@ Drupal.behaviors.uconn_theme_deposit = {
     var form = $('#islandora-solr-simple-search-form');
     // Attach mousedown() to the custom link in order to activate.
     $('.adv_deposit').click(function(e) {
-      e.preventDefault();
-      $('#edit-submit').trigger('click'); 
+//      e.preventDefault();
+//      $('#edit-submit').trigger('click'); 
     });
   }
 };

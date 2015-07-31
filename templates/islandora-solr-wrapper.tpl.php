@@ -18,7 +18,6 @@
  * @see template_preprocess_islandora_solr_wrapper()
  */
 ?>
-
 <div id="islandora-solr-top">
   <div id="islandora-solr-result-count"><?php print $islandora_solr_result_count; ?></div>
 </div>

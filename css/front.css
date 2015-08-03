@@ -93,7 +93,7 @@
 }
 /* line 94, ../sass/front.scss */
 .front-bottom .block-inner-wrapper {
-  min-height: auto;
+  min-height: auto !important;
   padding: 0px;
 }
 

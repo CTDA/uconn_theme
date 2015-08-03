@@ -92,9 +92,9 @@
     margin-bottom: 0px;
   }
   .block-inner-wrapper{
-    min-height: auto;
-    padding: 0px;
     @extend .lower-front-block-style;
+    min-height: auto !important;
+    padding: 0px;
   }
 }
 

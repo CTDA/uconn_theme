@@ -42,6 +42,7 @@ base theme  = zen
 stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
+stylesheets[all][] = css/layouts/responsive.css
 
 ; Then we add our own stylesheet.
 stylesheets[all][] = css/styles.css

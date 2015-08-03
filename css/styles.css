@@ -1602,60 +1602,65 @@ tr.selected td {
 }
 
 /* line 38, ../sass/page.scss */
+#navigation {
+  position: relative !important;
+}
+
+/* line 42, ../sass/page.scss */
 .islandora-basic-collection-display-switch ul {
   float: right;
 }
 
-/* line 42, ../sass/page.scss */
+/* line 46, ../sass/page.scss */
 .inner-page-wrapper {
   background-color: white;
   box-sizing: border-box;
   padding: 10px;
 }
 
-/* line 48, ../sass/page.scss */
+/* line 52, ../sass/page.scss */
 .front .inner-page-wrapper {
   background-color: transparent;
 }
 
-/* line 52, ../sass/page.scss */
+/* line 56, ../sass/page.scss */
 .header__site-slogan {
   text-decoration: none;
 }
 
-/* line 56, ../sass/page.scss */
+/* line 60, ../sass/page.scss */
 #header {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
 
-/* line 61, ../sass/page.scss */
+/* line 65, ../sass/page.scss */
 .branding-wrapper {
   display: table;
   padding-right: 10px;
 }
 
-/* line 66, ../sass/page.scss */
+/* line 70, ../sass/page.scss */
 .islandora-basic-collection {
   width: auto;
   padding: 20px;
 }
 
-/* line 71, ../sass/page.scss */
+/* line 75, ../sass/page.scss */
 .islandora-basic-collection-wrapper {
   background-color: white;
 }
 
-/* line 75, ../sass/page.scss */
+/* line 79, ../sass/page.scss */
 .islandora-object-info-wrapper {
   padding: 20px;
 }
 
-/* line 79, ../sass/page.scss */
+/* line 83, ../sass/page.scss */
 #branding {
   color: #fff;
 }
-/* line 81, ../sass/page.scss */
+/* line 85, ../sass/page.scss */
 #branding .branding-wrapper a {
   display: table-cell;
   text-decoration: none;
@@ -1663,18 +1668,18 @@ tr.selected td {
   vertical-align: middle;
 }
 
-/* line 89, ../sass/page.scss */
+/* line 93, ../sass/page.scss */
 .page__title.title {
   margin-bottom: .2em;
   margin-top: .2em;
 }
 
-/* line 95, ../sass/page.scss */
+/* line 99, ../sass/page.scss */
 .breadcrumb a {
   text-decoration: none;
 }
 
-/* line 99, ../sass/page.scss */
+/* line 103, ../sass/page.scss */
 #branding_text_right {
   display: table-cell;
   border-left-color: #3f4760;
@@ -1694,7 +1699,7 @@ tr.selected td {
   vertical-align: middle;
 }
 
-/* line 118, ../sass/page.scss */
+/* line 122, ../sass/page.scss */
 #branding_text_left {
   display: table-cell;
   color: #fff;
@@ -1709,17 +1714,17 @@ tr.selected td {
   text-transform: uppercase;
 }
 
-/* line 132, ../sass/page.scss */
+/* line 136, ../sass/page.scss */
 #block-system-powered-by {
   display: none;
 }
 
-/* line 136, ../sass/page.scss */
+/* line 140, ../sass/page.scss */
 #logo {
   display: none;
 }
 
-/* line 140, ../sass/page.scss */
+/* line 144, ../sass/page.scss */
 .icon-search {
   background-attachment: scroll;
   background-clip: border-box;
@@ -1734,61 +1739,61 @@ tr.selected td {
   width: 35px;
 }
 
-/* line 154, ../sass/page.scss */
+/* line 158, ../sass/page.scss */
 .btn-block {
   display: inline-block;
   height: 35px;
   width: 35px;
 }
 
-/* line 160, ../sass/page.scss */
+/* line 164, ../sass/page.scss */
 #mediaplayer {
   max-width: 100%;
 }
 
-/* line 164, ../sass/page.scss */
+/* line 168, ../sass/page.scss */
 .letters {
   text-decoration: none;
 }
-/* line 166, ../sass/page.scss */
+/* line 170, ../sass/page.scss */
 .letters span {
   padding-right: 2px;
   padding-top: 5px;
 }
 
-/* line 172, ../sass/page.scss */
+/* line 176, ../sass/page.scss */
 .islandora-basic-collection-grid {
   text-align: center;
 }
 
-/* line 175, ../sass/page.scss */
+/* line 179, ../sass/page.scss */
 .islandora-basic-collection-grid.clearfix dl {
   text-align: center;
   vertical-align: middle;
 }
 
-/* line 180, ../sass/page.scss */
+/* line 184, ../sass/page.scss */
 .islandora-basic-collection-display-switch {
   padding-right: 20px;
   max-height: 25px;
   width: 100%;
 }
-/* line 184, ../sass/page.scss */
+/* line 188, ../sass/page.scss */
 .islandora-basic-collection-display-switch li {
   padding-right: 0em;
   text-indent: -9999px;
 }
 
-/* line 190, ../sass/page.scss */
+/* line 194, ../sass/page.scss */
 .display-switch-wrapper {
   width: 100%;
 }
-/* line 192, ../sass/page.scss */
+/* line 196, ../sass/page.scss */
 .display-switch-wrapper .ul-display-switch {
   float: right;
 }
 
-/* line 197, ../sass/page.scss */
+/* line 201, ../sass/page.scss */
 a.islandora-view-grid {
   background: url("../images/display-grid.png") no-repeat;
   display: inline-block;
@@ -1797,7 +1802,7 @@ a.islandora-view-grid {
   color: transparent;
 }
 
-/* line 205, ../sass/page.scss */
+/* line 209, ../sass/page.scss */
 a.islandora-view-list {
   background: url("../images/display-grid-list.png") no-repeat;
   display: inline-block;
@@ -1806,7 +1811,7 @@ a.islandora-view-list {
   color: transparent;
 }
 
-/* line 213, ../sass/page.scss */
+/* line 217, ../sass/page.scss */
 .branding-button-wrapper {
   display: inline-block;
   float: right;
@@ -1814,12 +1819,12 @@ a.islandora-view-list {
   text-align: right;
   top: -48px;
 }
-/* line 219, ../sass/page.scss */
+/* line 223, ../sass/page.scss */
 .branding-button-wrapper span {
   font-size: 10px;
   display: inline-block;
 }
-/* line 223, ../sass/page.scss */
+/* line 227, ../sass/page.scss */
 .branding-button-wrapper a {
   height: 35px;
   width: 35px;
@@ -1841,66 +1846,66 @@ a.islandora-view-list {
   transition-timing-function: ease;
 }
 
-/* line 245, ../sass/page.scss */
+/* line 249, ../sass/page.scss */
 .header__site-name {
   font-size: 80%;
   letter-spacing: 0.5pt;
   text-transform: uppercase;
 }
 
-/* line 250, ../sass/page.scss */
+/* line 254, ../sass/page.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #9c9ba9 !important;
 }
 
-/* line 254, ../sass/page.scss */
+/* line 258, ../sass/page.scss */
 #site-name, #site-slogan {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* line 259, ../sass/page.scss */
+/* line 263, ../sass/page.scss */
 #site-slogan {
   font-size: 1.2em;
   font-family: Verdana,Tahoma,"DejaVu Sans",sans-serif;
 }
 
-/* line 264, ../sass/page.scss */
+/* line 268, ../sass/page.scss */
 #name-and-slogan {
   padding-top: 10px;
   padding-right: 10px;
 }
 
-/* line 269, ../sass/page.scss */
+/* line 273, ../sass/page.scss */
 #page-title {
   display: inline-block;
 }
 
-/* line 273, ../sass/page.scss */
+/* line 277, ../sass/page.scss */
 .secondary-display-profiles {
   display: inline-block;
   float: right;
   margin-top: 1em;
   margin-bottom: 2em;
 }
-/* line 278, ../sass/page.scss */
+/* line 282, ../sass/page.scss */
 .secondary-display-profiles .secondary-display-rss {
   max-width: 35px;
 }
 
-/* line 283, ../sass/page.scss */
+/* line 287, ../sass/page.scss */
 #secondary-display-profiles li {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 288, ../sass/page.scss */
+/* line 292, ../sass/page.scss */
 ul.islandora-solr-display {
   float: right;
   display: inline;
   width: 100%;
 }
-/* line 292, ../sass/page.scss */
+/* line 296, ../sass/page.scss */
 ul.islandora-solr-display li {
   display: inline;
   float: right;
@@ -1910,7 +1915,7 @@ ul.islandora-solr-display li {
   text-indent: -9999px;
   width: 21px;
 }
-/* line 300, ../sass/page.scss */
+/* line 304, ../sass/page.scss */
 ul.islandora-solr-display li a.display-bookmark {
   background-image: url("../images/display-bookmark.png");
   display: block;
@@ -1918,7 +1923,7 @@ ul.islandora-solr-display li a.display-bookmark {
   text-indent: -9999px;
   width: 21px;
 }
-/* line 307, ../sass/page.scss */
+/* line 311, ../sass/page.scss */
 ul.islandora-solr-display li a.display-default {
   background-image: url("../images/display-grid-list.png");
   display: block;
@@ -1926,7 +1931,7 @@ ul.islandora-solr-display li a.display-default {
   text-indent: -9999px;
   width: 21px;
 }
-/* line 314, ../sass/page.scss */
+/* line 318, ../sass/page.scss */
 ul.islandora-solr-display li a.display-grid {
   background-image: url("../images/display-grid.png");
   display: block;
@@ -1935,47 +1940,47 @@ ul.islandora-solr-display li a.display-grid {
   width: 21px;
 }
 
-/* line 324, ../sass/page.scss */
+/* line 328, ../sass/page.scss */
 fieldset.islandora-metadata {
   border: none;
 }
 
-/* line 327, ../sass/page.scss */
+/* line 331, ../sass/page.scss */
 .islandora-pdf-content-wrapper {
   display: inline-block;
 }
-/* line 329, ../sass/page.scss */
+/* line 333, ../sass/page.scss */
 .islandora-pdf-content-wrapper .islandora-pdf-content {
   width: auto;
 }
 
-/* line 334, ../sass/page.scss */
+/* line 338, ../sass/page.scss */
 .islandora-metadata .fieldset-title {
   text-decoration: none;
 }
 
-/* line 339, ../sass/page.scss */
+/* line 343, ../sass/page.scss */
 .islandora-inline-metadata dt {
   text-align: left;
 }
 
-/* line 344, ../sass/page.scss */
+/* line 348, ../sass/page.scss */
 html.js .collapsible .fieldset-legend {
   background-position: 70px 65%;
 }
 
-/* line 348, ../sass/page.scss */
+/* line 352, ../sass/page.scss */
 .branding-button-wrapper span a {
   font-size: 110%;
   padding-left: 3px;
   text-align: center;
 }
-/* line 352, ../sass/page.scss */
+/* line 356, ../sass/page.scss */
 .branding-button-wrapper span a span:nth-child(2) {
   padding-right: 0px;
 }
 
-/* line 357, ../sass/page.scss */
+/* line 361, ../sass/page.scss */
 .branding-button-wrapper span {
   color: #c1e8f8;
   display: inline-block;
@@ -1984,11 +1989,11 @@ html.js .collapsible .fieldset-legend {
   text-align: center;
 }
 
-/* line 366, ../sass/page.scss */
+/* line 370, ../sass/page.scss */
 #main div.limiter {
   padding: 0px;
 }
-/* line 368, ../sass/page.scss */
+/* line 372, ../sass/page.scss */
 #main div.limiter div#content {
   padding: 0px;
 }

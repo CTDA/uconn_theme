@@ -37,6 +37,12 @@ function uconn_theme_form_system_theme_settings_alter(&$form, &$form_state, $for
     '#default_value' => (theme_get_setting('uconn_branding_text_link') ? theme_get_setting('uconn_branding_text_link') : "research.lib.uconn.edu"),
     '#description' => t("Link the branding text to a paticular website, defaults to research.lib.uconn.edu."),
   );
+  $form['uconn_theme_custom']['uconn_deposit_text_link'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Deposit Link'),
+    '#default_value' => (theme_get_setting('uconn_deposit_text_link') ? theme_get_setting('uconn_deposit_text_link') : "http://research.lib.uconn.edu/submit"),
+    '#description' => t("Configure the Deposit link redirect above simple search."),
+  );
   $form['uconn_theme_custom']['collection_level'] = array(
     '#type' => 'fieldset',
     '#title' => t('Custom Collection level options'),

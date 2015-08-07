@@ -81,9 +81,6 @@ function uconn_theme_preprocess_page(&$variables) {
   $path = current_path();
   $path_array = explode("/", $path);
 
- // $variables['page']['content']['views_frontpage_solr_boxes-block']['#prefix'] = "<div class='three-table'><div class='three-wrapper'>";
-  //$variables['page']['content']['islandora_usage_stats_top_usage']['#suffix'] = "</div></div>";
-
   // Add script to the front page, to control the height of the three columns at the bottom.
   // Does not work natively in Zen grids, so this is required.
   if (drupal_is_front_page()) {

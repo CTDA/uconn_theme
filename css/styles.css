@@ -1948,39 +1948,40 @@ fieldset.islandora-metadata {
 /* line 331, ../sass/page.scss */
 .islandora-pdf-content-wrapper {
   display: inline-block;
+  width: 100%;
 }
-/* line 333, ../sass/page.scss */
+/* line 334, ../sass/page.scss */
 .islandora-pdf-content-wrapper .islandora-pdf-content {
-  width: auto;
+  width: 100%;
 }
 
-/* line 338, ../sass/page.scss */
+/* line 339, ../sass/page.scss */
 .islandora-metadata .fieldset-title {
   text-decoration: none;
 }
 
-/* line 343, ../sass/page.scss */
+/* line 344, ../sass/page.scss */
 .islandora-inline-metadata dt {
   text-align: left;
 }
 
-/* line 348, ../sass/page.scss */
+/* line 349, ../sass/page.scss */
 html.js .collapsible .fieldset-legend {
   background-position: 70px 65%;
 }
 
-/* line 352, ../sass/page.scss */
+/* line 353, ../sass/page.scss */
 .branding-button-wrapper span a {
   font-size: 110%;
   padding-left: 3px;
   text-align: center;
 }
-/* line 356, ../sass/page.scss */
+/* line 357, ../sass/page.scss */
 .branding-button-wrapper span a span:nth-child(2) {
   padding-right: 0px;
 }
 
-/* line 361, ../sass/page.scss */
+/* line 362, ../sass/page.scss */
 .branding-button-wrapper span {
   color: #c1e8f8;
   display: inline-block;
@@ -1989,11 +1990,11 @@ html.js .collapsible .fieldset-legend {
   text-align: center;
 }
 
-/* line 370, ../sass/page.scss */
+/* line 371, ../sass/page.scss */
 #main div.limiter {
   padding: 0px;
 }
-/* line 372, ../sass/page.scss */
+/* line 373, ../sass/page.scss */
 #main div.limiter div#content {
   padding: 0px;
 }

@@ -330,8 +330,9 @@ fieldset.islandora-metadata{
 }
 .islandora-pdf-content-wrapper {
   display: inline-block;
+  width: 100%;
   .islandora-pdf-content{
-    width: auto;
+    width: 100%;;
   }
 }
 

@@ -65,6 +65,11 @@
   .block-inner-wrapper{
     @extend .lower-front-block-style;
     min-height: 500px;
+    ul.menu li {
+      list-style-image: none;
+      list-style-position: outside;
+      list-style-type: none;
+    }
   }
 }
 

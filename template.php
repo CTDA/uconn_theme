@@ -35,19 +35,14 @@ function uconn_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 15;
   $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'] = t("Search Repository");
   $deposit = array(
-    '#markup' => l(t("Deposit"), "http://research.lib.uconn.edu/submit", array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
+    '#markup' => l(t("Deposit"), theme_get_setting('uconn_deposit_text_link'), array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
   );
   $link = array(
     '#markup' => l(t("Advanced Search"), "advanced-search", array('attributes' => array('class' => array('adv_search')))),
   );
   $form['simple']['islandora_simple_search_query']['#prefix'] = drupal_render($deposit);
   $form['simple']['islandora_simple_search_query']['#suffix'] = drupal_render($link);
-  $form['simple']['#attached']['js'] = array(
-    array(
-      'type'  => 'file',
-      'data' => path_to_theme() . '/js/deposit_search.js',
-    ),
-  );
+
 }
 
 /**
@@ -86,6 +81,17 @@ function uconn_theme_preprocess_page(&$variables) {
   $path = current_path();
   $path_array = explode("/", $path);
 
+ // $variables['page']['content']['views_frontpage_solr_boxes-block']['#prefix'] = "<div class='three-table'><div class='three-wrapper'>";
+  //$variables['page']['content']['islandora_usage_stats_top_usage']['#suffix'] = "</div></div>";
+
+  // Add script to the front page, to control the height of the three columns at the bottom.
+  // Does not work natively in Zen grids, so this is required.
+  if (drupal_is_front_page()) {
+    $theme_path = drupal_get_path('theme',$GLOBALS['theme']);
+    drupal_add_js("$theme_path/js/jquery.matchHeight-min.js");
+    drupal_add_js("$theme_path/js/matchHeightBehaviour.js");
+  }
+
   // Selectively add class to content, edge case requires particular
   // Styling on the search result page. Set here so it is always
   // Available.
@@ -98,13 +104,16 @@ function uconn_theme_preprocess_page(&$variables) {
       $default_rss_icon_location = "/sites/all/modules/islandora_solr_search/islandora_solr_config/images/rss.png";
       $new_rss_icon_location = "/" . drupal_get_path('theme', 'uconn_theme') . '/images/rss_w.png';
 
-      $secondary_display_profiles = str_replace($default_rss_icon_location,
+      $secondary_display_profiles = str_replace(
+        $default_rss_icon_location,
         $new_rss_icon_location,
         $secondary_display_profiles
       );
+
       if (isset($secondary_display_profiles)) {
         $variables['secondary_display_profiles'] = $secondary_display_profiles;
       }
+
       $variables['inner_page_wrapper'] = "inner-page-wrapper";
     }
   }

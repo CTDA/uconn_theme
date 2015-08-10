@@ -17,7 +17,7 @@
   <?php endif; ?>
 
   <?php if (isset($islandora_latest_objects)): ?>
-    <div class="collection-latest-objects-wrapper"><h1 class="title">Recently Added</h1><?php print $islandora_latest_objects; ?></div>
+    <div class="collection-latest-objects-wrapper"><h1 class="title">Most Viewed</h1><?php print $islandora_latest_objects; ?></div>
   <?php endif; ?>
 
   <?php if (isset($meta_description)): ?>

@@ -37,6 +37,12 @@ function uconn_theme_form_system_theme_settings_alter(&$form, &$form_state, $for
     '#default_value' => (theme_get_setting('uconn_branding_text_link') ? theme_get_setting('uconn_branding_text_link') : "research.lib.uconn.edu"),
     '#description' => t("Link the branding text to a paticular website, defaults to research.lib.uconn.edu."),
   );
+  $form['uconn_theme_custom']['deposit_branding_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Deposit Link Label'),
+    '#default_value' => (theme_get_setting('deposit_branding_text') ? theme_get_setting('deposit_branding_text') : "Deposit"),
+    '#description' => t("The label text of the 'Deposit' link found above the 'Search Repository' text entry field"),
+  );
   $form['uconn_theme_custom']['uconn_deposit_text_link'] = array(
     '#type' => 'textfield',
     '#title' => t('Deposit Link'),
@@ -56,4 +62,5 @@ function uconn_theme_form_system_theme_settings_alter(&$form, &$form_state, $for
     '#default_value' => (theme_get_setting('collection_image_ds') ? theme_get_setting('collection_image_ds') : "TN"),
     '#description' => t("The collection level objects datastream id (DSID) to use as an image on the collection landing page."),
   );
+
 }

@@ -20,10 +20,10 @@
     <div class="collection-latest-objects-wrapper"><h1 class="title">Recently Added</h1><?php print $islandora_latest_objects; ?></div>
   <?php endif; ?>
 
-  <?php if (!empty($dc_array['dc:description']['value'])): ?>
+  <?php if (isset($meta_description)): ?>
     <div class="collection-description-wrapper">
       <h1><?php print t("About This Collection"); ?></h1>
-      <p><?php print $dc_array['dc:description']['value']; ?></p>
+      <p><?php print $meta_description; ?></p>
     </div>
   <?php endif; ?>
 

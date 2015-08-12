@@ -34,15 +34,15 @@ function uconn_theme_preprocess_region_branding(&$variables) {
 function uconn_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 15;
   $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'] = t("Search Repository");
+  $deposit_text = theme_get_setting('deposit_branding_text');
   $deposit = array(
-    '#markup' => l(t("Deposit"), theme_get_setting('uconn_deposit_text_link'), array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
+    '#markup' => l(t($deposit_text), theme_get_setting('uconn_deposit_text_link'), array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
   );
   $link = array(
     '#markup' => l(t("Advanced Search"), "advanced-search", array('attributes' => array('class' => array('adv_search')))),
   );
   $form['simple']['islandora_simple_search_query']['#prefix'] = drupal_render($deposit);
   $form['simple']['islandora_simple_search_query']['#suffix'] = drupal_render($link);
-
 }
 
 /**
@@ -53,15 +53,18 @@ function uconn_theme_preprocess_islandora_basic_collection_wrapper(&$variables) 
   if (isset($variables['islandora_object'][$dsid])) {
     $variables['collection_image_ds'] = theme_get_setting('collection_image_ds');
   }
-  if (in_array("islandora:collectionCModel", $variables['islandora_object']->{models})) {
-    array_push($variables['associated_objects_array'][$key]['classes'], 'islandora-default-thumb');
-    if (module_exists('dgi_ondemand')) {
-      $block = module_invoke('dgi_ondemand', 'block_view', 'dgi_ondemand_latest_obj');
-      $data = render($block['content']);
-      if (!empty($data)) {
-        $variables['islandora_latest_objects'] = $data;
-      }
-    }
+  module_load_include('module', 'islandora_solr_metadata', 'islandora_solr_metadata');
+  $variables['meta_description'] = islandora_solr_metadata_description_callback($variables['islandora_object']);
+  $view = views_get_view('usage_collection');
+  if (isset($view)) {
+    // If our view exists, then set the display.
+    $view->set_display('block');
+    $view->pre_execute();
+    $view->execute();
+    // Rendering will return the HTML of the the view
+    $output = $view->render();
+    // Passing this as array, perhaps add more, like custom title or the like?
+    $variables['islandora_latest_objects']  = $output;
   }
 }
 

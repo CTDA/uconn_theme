@@ -122,7 +122,7 @@ div.service-label {
 }
 
 /* line 118, ../sass/block.scss */
-.header__region {
+div.region.region-header {
   clear: right;
   display: block;
   float: right;

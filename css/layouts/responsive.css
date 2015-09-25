@@ -73,7 +73,7 @@
     /* Move the navbar up inside #main's padding. */
     position: absolute;
     top: 0;
-    height: 3em;
+    height: auto;
     width: 100%;
   }
 }

@@ -198,3 +198,12 @@ div.service-label {
   margin-bottom: 0em;
   margin-top: 0em;
 }
+
+/* line 194, ../sass/block.scss */
+.islandora-object-info-wrapper .view-usage-collection .views-field-pid a {
+  text-decoration: none;
+}
+/* line 198, ../sass/block.scss */
+.islandora-object-info-wrapper .view-usage-collection span.views-field-id {
+  color: lightgray;
+}

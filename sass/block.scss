@@ -187,3 +187,16 @@ div.service-label{
     margin-top: 0em;
   }
 }
+
+.islandora-object-info-wrapper{
+  .view-usage-collection{
+    .views-field-pid{
+      a{
+        text-decoration: none;
+      }
+    }
+    span.views-field-id {
+      color: lightgray;
+    }
+  }
+}

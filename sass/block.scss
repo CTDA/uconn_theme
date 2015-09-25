@@ -115,7 +115,7 @@ div.service-label{
   }
 }
 
-.header__region {
+div.region.region-header {
     clear: right;
     display: block;
     float: right;
@@ -185,5 +185,18 @@ div.service-label{
     padding: 10px;
     margin-bottom: 0em;
     margin-top: 0em;
+  }
+}
+
+.islandora-object-info-wrapper{
+  .view-clone-of-islandora-usage-stats-for-collections{
+    .views-field-pid{
+      a{
+        text-decoration: none;
+      }
+    }
+    span.views-field-id {
+      color: lightgray;
+    }
   }
 }

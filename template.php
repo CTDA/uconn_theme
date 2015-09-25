@@ -55,7 +55,7 @@ function uconn_theme_preprocess_islandora_basic_collection_wrapper(&$variables) 
   }
   module_load_include('module', 'islandora_solr_metadata', 'islandora_solr_metadata');
   $variables['meta_description'] = islandora_solr_metadata_description_callback($variables['islandora_object']);
-  $view = views_get_view('usage_collection');
+  $view = views_get_view('clone_of_islandora_usage_stats_for_collections');
   if (isset($view)) {
     // If our view exists, then set the display.
     $view->set_display('block');

@@ -200,10 +200,10 @@ div.service-label {
 }
 
 /* line 194, ../sass/block.scss */
-.islandora-object-info-wrapper .view-usage-collection .views-field-pid a {
+.islandora-object-info-wrapper .view-clone-of-islandora-usage-stats-for-collections .views-field-pid a {
   text-decoration: none;
 }
 /* line 198, ../sass/block.scss */
-.islandora-object-info-wrapper .view-usage-collection span.views-field-id {
+.islandora-object-info-wrapper .view-clone-of-islandora-usage-stats-for-collections span.views-field-id {
   color: lightgray;
 }

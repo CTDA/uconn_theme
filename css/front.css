@@ -132,7 +132,12 @@
 }
 
 @media (min-width: 620px) {
-  /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  /* line 125, ../sass/front.scss */
+  #content {
+    *position: relative;
+    *zoom: 1;
+  }
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
   #content:before, #content:after {
     content: "";
     display: table;
@@ -154,6 +159,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 131, ../sass/front.scss */
   #content .front-left {
@@ -169,6 +177,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 136, ../sass/front.scss */
   #content .front-center {
@@ -183,6 +194,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 140, ../sass/front.scss */
   #content .front-right {
@@ -197,6 +211,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 144, ../sass/front.scss */
   #content .front-bottom {
@@ -212,6 +229,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 }
 @media (max-width: 670px) {

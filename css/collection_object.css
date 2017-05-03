@@ -54,7 +54,12 @@
 }
 
 @media (min-width: 670px) {
-  /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  /* line 56, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper {
+    *position: relative;
+    *zoom: 1;
+  }
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
   .islandora-object-info-wrapper:before, .islandora-object-info-wrapper:after {
     content: "";
     display: table;
@@ -76,6 +81,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 63, ../sass/collection_object.scss */
   .islandora-object-info-wrapper .collection-latest-objects-wrapper {
@@ -90,6 +98,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 67, ../sass/collection_object.scss */
   .islandora-object-info-wrapper .collection-description-wrapper {
@@ -105,10 +116,18 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 }
 @media (max-width: 670px) {
-  /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  /* line 77, ../sass/collection_object.scss */
+  .islandora-object-info-wrapper {
+    *position: relative;
+    *zoom: 1;
+  }
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
   .islandora-object-info-wrapper:before, .islandora-object-info-wrapper:after {
     content: "";
     display: table;
@@ -130,6 +149,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 84, ../sass/collection_object.scss */
   .islandora-object-info-wrapper .collection-latest-objects-wrapper {
@@ -145,6 +167,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 89, ../sass/collection_object.scss */
   .islandora-object-info-wrapper .collection-description-wrapper {
@@ -159,6 +184,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 92, ../sass/collection_object.scss */
   .islandora-object-info-wrapper .collection-description-wrapper > h1 {

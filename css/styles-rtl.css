@@ -17,11 +17,21 @@ dd {
 }
 
 /* Address paddings set differently in IE 6/7. */
-/* line 14, ../sass/_normalize-rtl.scss */
+/* line 16, ../sass/_normalize-rtl.scss */
 menu,
 ol,
 ul {
   padding: 0 30px 0 0;
+}
+
+/**
+ * Forms
+ */
+/* line 24, ../sass/_normalize-rtl.scss */
+legend {
+  /* Correct alignment displayed oddly in IE 6/7. */
+  *margin-left: 0;
+  *margin-right: -7px;
 }
 
 /* Layout rules */
@@ -53,16 +63,16 @@ ul {
   /* line 88, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: right;
-    width: 200%;
-    margin-right: 100%;
-    margin-left: -300%;
+    width: 66.66667%;
+    margin-right: 33.33333%;
+    margin-left: -100%;
   }
   /* line 93, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: right;
-    width: 100%;
+    width: 33.33333%;
     margin-right: 0%;
-    margin-left: -100%;
+    margin-left: -33.33333%;
   }
 
   /**
@@ -76,16 +86,16 @@ ul {
   /* line 103, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: right;
-    width: 200%;
+    width: 66.66667%;
     margin-right: 0%;
-    margin-left: -200%;
+    margin-left: -66.66667%;
   }
   /* line 108, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: right;
-    width: 100%;
-    margin-right: 200%;
-    margin-left: -300%;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
   }
 
   /**
@@ -100,23 +110,23 @@ ul {
   /* line 118, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: right;
-    width: 200%;
-    margin-right: 100%;
-    margin-left: -300%;
+    width: 66.66667%;
+    margin-right: 33.33333%;
+    margin-left: -100%;
   }
   /* line 123, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: right;
-    width: 100%;
+    width: 33.33333%;
     margin-right: 0%;
-    margin-left: -100%;
+    margin-left: -33.33333%;
   }
   /* line 128, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: right;
-    width: 300%;
+    width: 100%;
     margin-right: 0%;
-    margin-left: -300%;
+    margin-left: -100%;
     padding-left: 0;
     padding-right: 0;
     clear: right;
@@ -134,28 +144,31 @@ ul {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 138, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: right;
-    width: 100%;
+    width: 33.33333%;
     margin-right: 0%;
-    margin-left: -100%;
+    margin-left: -33.33333%;
     clear: right;
   }
   /* line 143, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: right;
-    width: 100%;
-    margin-right: 100%;
-    margin-left: -200%;
+    width: 33.33333%;
+    margin-right: 33.33333%;
+    margin-left: -66.66667%;
   }
   /* line 147, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: right;
-    width: 100%;
-    margin-right: 200%;
-    margin-left: -300%;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
   }
 }
 /**
@@ -173,16 +186,16 @@ ul {
   /* line 166, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: right;
-    width: 400%;
-    margin-right: 100%;
-    margin-left: -500%;
+    width: 80%;
+    margin-right: 20%;
+    margin-left: -100%;
   }
   /* line 171, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: right;
-    width: 100%;
+    width: 20%;
     margin-right: 0%;
-    margin-left: -100%;
+    margin-left: -20%;
   }
 
   /**
@@ -196,16 +209,16 @@ ul {
   /* line 181, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: right;
-    width: 400%;
+    width: 80%;
     margin-right: 0%;
-    margin-left: -400%;
+    margin-left: -80%;
   }
   /* line 186, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: right;
-    width: 100%;
-    margin-right: 400%;
-    margin-left: -500%;
+    width: 20%;
+    margin-right: 80%;
+    margin-left: -100%;
   }
 
   /**
@@ -220,23 +233,23 @@ ul {
   /* line 196, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: right;
-    width: 300%;
-    margin-right: 100%;
-    margin-left: -400%;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: -80%;
   }
   /* line 201, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: right;
-    width: 100%;
+    width: 20%;
     margin-right: 0%;
-    margin-left: -100%;
+    margin-left: -20%;
   }
   /* line 206, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: right;
-    width: 100%;
-    margin-right: 400%;
-    margin-left: -500%;
+    width: 20%;
+    margin-right: 80%;
+    margin-left: -100%;
   }
 }
 /* Component (SMACSS module) rules */
@@ -263,7 +276,7 @@ ul {
  * Navigation bar.
  */
 /* Main menu and secondary menu links and menu block links. */
-/* line 26, ../sass/components/_misc-rtl.scss */
+/* line 27, ../sass/components/_misc-rtl.scss */
 #navigation .links,
 #navigation .menu {
   text-align: right;
@@ -336,6 +349,7 @@ span.field-label {
 /* line 105, ../sass/components/_misc-rtl.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');
+  *list-style-image: url('../images/menu-collapsed-rtl.png?1493383417');
 }
 
 /**
@@ -357,7 +371,7 @@ span.field-label {
   text-align: right;
 }
 
-/* line 131, ../sass/components/_misc-rtl.scss */
+/* line 132, ../sass/components/_misc-rtl.scss */
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
@@ -389,6 +403,7 @@ html.js .collapsible .fieldset-legend {
 /* line 160, ../sass/components/_misc-rtl.scss */
 html.js .collapsed .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');
+  *background-image: url('../images/menu-collapsed-rtl.png?1493383417');
   background-position: 98% 50%;
 }
 

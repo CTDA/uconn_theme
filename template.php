@@ -35,6 +35,7 @@ function uconn_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 15;
   $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'] = t("Search Repository");
   $deposit_text = theme_get_setting('deposit_branding_text');
+  $form['simple']['islandora_simple_search_query']['#title_display'] = 'invisible';
   $deposit = array(
     '#markup' => l(t($deposit_text), theme_get_setting('uconn_deposit_text_link'), array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
   );

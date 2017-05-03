@@ -34,8 +34,9 @@ function uconn_theme_preprocess_region_branding(&$variables) {
 function uconn_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $form['simple']['islandora_simple_search_query']['#attributes']['size'] = 15;
   $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'] = t("Search Repository");
-  $deposit_text = theme_get_setting('deposit_branding_text');
   $form['simple']['islandora_simple_search_query']['#title_display'] = 'invisible';
+
+  $deposit_text = theme_get_setting('deposit_branding_text');
   $deposit = array(
     '#markup' => l(t($deposit_text), theme_get_setting('uconn_deposit_text_link'), array('attributes' => array('class' => array('adv_deposit', 'form-submit'), 'type' => 'submit'))),
   );
@@ -50,25 +51,64 @@ function uconn_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form
  * Implements hook_preprocess().
  */
 function uconn_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
+  // Add content to the templates when using SPARQL or Legacy backend display.
+  uconn_theme_collection_page_content($variables);
+}
+
+/**
+ * Implements hook_preprocess_islandora_objects_subset().
+ */
+function uconn_theme_preprocess_islandora_objects_subset(&$variables) {
+  // Add content to the templates when using SOLR backend display.
+  uconn_theme_collection_page_content($variables);
+}
+
+/**
+ * Helper function to set up content on collection pages.
+ * @param array $variables
+ *   Set of template preprocess variables.
+ */
+function uconn_theme_collection_page_content(&$variables) {
+  module_load_include('module', 'islandora_solr_metadata', 'islandora_solr_metadata');
+
+  if (!isset($variables['islandora_object'])) {
+    $variables['islandora_object'] = menu_get_object('islandora_object', 2);
+  }
+
+  $variables['meta_description'] = islandora_solr_metadata_description_callback($variables['islandora_object']);
   $dsid = theme_get_setting('collection_image_ds');
+
   if (isset($variables['islandora_object'][$dsid])) {
     $variables['collection_image_ds'] = theme_get_setting('collection_image_ds');
   }
-  module_load_include('module', 'islandora_solr_metadata', 'islandora_solr_metadata');
-  $variables['meta_description'] = islandora_solr_metadata_description_callback($variables['islandora_object']);
+
   $view = views_get_view('clone_of_islandora_usage_stats_for_collections');
   if (isset($view)) {
+
     // If our view exists, then set the display.
     $view->set_display('block');
     $view->pre_execute();
     $view->execute();
+
     // Rendering will return the HTML of the the view
     $output = $view->render();
-    // Passing this as array, perhaps add more, like custom title or the like?
+
+    // Pass our view results in to our template.
     $variables['islandora_latest_objects']  = $output;
   }
-}
 
+  // Add classes to our display switcher, so they are easier to theme.
+  if (isset($variables['display_links'])) {
+    foreach ($variables['display_links'] as $key => &$values) {
+      if ($values['title'] == 'Grid view') {
+        $values['attributes']['class'][] = 'islandora-view-grid';
+      }
+      if ($values['title'] == 'List view') {
+        $values['attributes']['class'][] = 'islandora-view-list';
+      }
+    }
+  }
+}
 /**
  * Implements hook_preprocess_block().
  */

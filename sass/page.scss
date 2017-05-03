@@ -173,9 +173,15 @@
   }
 }
 
-.islandora-basic-collection-grid{
+.islandora-objects-grid {
   text-align: center;
 }
+
+.islandora-basic-collection-grid,
+.islandora-objects-grid-item {
+  text-align: center;
+}
+
 .islandora-basic-collection-grid.clearfix dl {
   text-align: center;
   vertical-align: middle;
@@ -185,9 +191,15 @@
   padding-right: 20px;
   max-height: 25px;
   width:100%;
-  li{
-    padding-right: 0em;
-    text-indent: -9999px;
+  display: block;
+  
+  ul {
+    margin-top: 0;
+
+    li{
+      padding-right: 0em;
+      text-indent: -9999px;
+    }
   }
 }
 

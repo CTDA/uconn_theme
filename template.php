@@ -69,8 +69,6 @@ function uconn_theme_preprocess_islandora_objects_subset(&$variables) {
  *   Set of template preprocess variables.
  */
 function uconn_theme_collection_page_content(&$variables) {
-  module_load_include('module', 'islandora_solr_metadata', 'islandora_solr_metadata');
-
   if (!isset($variables['islandora_object'])) {
     $variables['islandora_object'] = menu_get_object('islandora_object', 2);
   }

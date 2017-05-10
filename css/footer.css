@@ -13,7 +13,7 @@
   -moz-border-top-colors: none;
   background-attachment: scroll;
   background-clip: border-box;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(to bottom, #0368b0 0%, #0e5b8f 100%);
   background-origin: padding-box;
   background-position: 0 0;
@@ -180,8 +180,13 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    *position: relative;
+    *zoom: 1;
   }
-  /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
   #footer .limiter:before, #footer .limiter:after {
     content: "";
     display: table;
@@ -203,6 +208,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 172, ../sass/footer.scss */
   #footer .limiter .footer-menu-links {
@@ -217,6 +225,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 175, ../sass/footer.scss */
   #footer .limiter .btn-libraries {
@@ -231,6 +242,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 178, ../sass/footer.scss */
   #footer .limiter .footer-social-media-view {
@@ -246,6 +260,9 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
   /* line 182, ../sass/footer.scss */
   #footer .limiter .footer-lower-menu {
@@ -261,5 +278,8 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 }
